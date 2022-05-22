@@ -4,7 +4,7 @@ import Contact from "./views/contact";
 import Error from "./views/error";
 import Home from "./views/home";
 import Privacy from "./views/privacy";
-import Service from "./views/service";
+import Services from "./views/services";
 
 const ERRORS = {
     "401":{
@@ -24,14 +24,20 @@ const ERRORS = {
 const PATHS = [
     {menuItem:true,menuName:"Home",path:"/",component:<Home/>},
     {menuItem:true,menuName:"About",path:"/about",component:<About/>},
-    {menuItem:true,menuName:"Service",path:"/service",component:<Service/>},
+    {menuItem:true,menuName:"Services",path:"/services",component:<Services/>},
     {menuItem:true,menuName:"Contact",path:"/contact",component:<Contact/>},
     {menuItem:false,menuName:"",path:"/comingsoon",component:<Comingsoon/>},
     {menuItem:false,menuName:"",path:"/privacy",component:<Privacy/>},
     {menuItem:false,menuName:"",path:"*",component:<Error errorData={ERRORS['404']}/>}
 ];
 
+const APP_LINKS = {
+    messages: "",
+    users: ""
+};
+
 export {
+    APP_LINKS,
     ERRORS,
     PATHS
 }
