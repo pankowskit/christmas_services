@@ -8,7 +8,7 @@ class ServicesS1 extends Component{
         return(    
             <Container fluid className="services-s1 bg-dark d-flex minh-50vh align-items-center py-5">
                 <Row className="mx-0 w-100 mt-5">
-                    <Col xs={12} md={5} className="minh-50vh d-flex align-items-center">
+                    <Col xs={12} md={{span:5,offset:1}} className="minh-50vh d-flex align-items-center">
                         <div className="w-100 text-center text-md-start pt-5">
                             <h2 className="dispaly-6 fw-bold text-white-50">
                                 Dolor sit amet         
